@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+#Container{
+    width:100%;
+    margin:0px auto;
+    background:#CEE5D0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#Header{
+    background: #000;    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:0px 2px 5px 3px #888;
+}
+#Icono{
+    display:flex;
+    flex-direction: row;
+}
+#Icono img{
+    width:10%;
+}
+#Icono h1{
+   
+   margin-left: 20px;
+   font-size: 2.4em;
+   color:#5800FF;
+}
+#Navbar1{    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a{
+    padding:5px;
+    background: #5800FF;
+    margin:15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1em;
+    box-shadow: 2px 0px 3px 1px  #fff;
+    /*Ahora añadimos una pequeña animacion*/
+    animation-name:reloj;
+    animation-duration:.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes reloj{
+0%{box-shadow: 2px 0px 2px 1px  #ccc;}
+12%{box-shadow: 1px 1px 2px 1px  #ccc;}
+25%{box-shadow: 0px 2px 2px 1px  #ccc;}
+37%{box-shadow: -1px 1px 2px 1px  #ccc;}
+50%{box-shadow: -2px 0px 2px 1px  #ccc;}
+62%{box-shadow: -1px -1px 2px 1px  #ccc;}
+75%{box-shadow: 0px -2px 2px 1px  #ccc;}
+87%{box-shadow: 1px -1px 2px 1px  #ccc;}
+100%{box-shadow: 2px 0px 2px 1px  #ccc;}
+}
+a:hover{
+    background: #fff;
+    color:#5800FF;
+}
+h2{
+    
+    font-size: 2em;
+}
+#Main{
+ display:flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: stretch;
+ 
+}
+#Presentacion{   
+ flex: 1 1 65%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.texto{
+    margin-top:20px;
+    width:90%;
+}
+#aside{
+   flex:1 1 35%;
+   display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+}
+.caja{
+    background:#000;
+    flex-basis:1fr;
+   
+}
+.caja img{
+    width:100%;
+}
+.widContainer{
+    display:flex;
+    flex-direction: row;   
+    width: 90%;
+    justify-content: space-evenly;   
+}
+.widget{
+    background-color: #5800FF;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+    border:1px solid black;
+    color :#FFC600;
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+article p{
+    padding: 20px 0px;
+}
+
+#Footer{
+    background: #000;
+    height:60px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:-2px 0px 5px 1px #5800FF;
+
+
+}
