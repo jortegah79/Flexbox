@@ -155,7 +155,7 @@ article p {
 }
 @media screen and (max-width: 980px) {
   #Footer {
-    height: 100%;
+    height: 130px;
     flex-wrap: wrap;
   }
 }
@@ -178,6 +178,7 @@ article p {
     flex-direction: column;
   }
   #Footer {
+    height: 100%;
     justify-content: space-evenly;
   }
 }
