@@ -205,4 +205,9 @@ article p {
     flex-wrap: nowrap;
     margin: 20px;
   }
+  a{
+    flex-grow: 2;
+    flex-shrink: 1;
+    text-align:center;
+  }
 }
